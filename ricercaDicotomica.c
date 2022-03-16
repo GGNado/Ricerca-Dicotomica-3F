@@ -72,10 +72,10 @@ int ricercaDicotomica(int array[], int SIZE, int key){
 			return sizeD;
 
 		} else if (array[sizeD] < key){
-			inizio = inizio + 1;
+			inizio = sizeD + 1;
 
 		} else if (array[sizeD] > key){
-			fine = fine - 1;
+			fine = sizeD - 1;
 		}
 		
 	}
