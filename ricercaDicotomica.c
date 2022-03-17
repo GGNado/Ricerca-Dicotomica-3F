@@ -19,7 +19,7 @@ int main(){
 	printf("Quale numero vuoi cercare?\n");
 	scanf("%d", &key);
 	ricerca = ricercaDicotomica(array, SIZE, key);
-	if(ricerca >= 1){
+	if(ricerca >= 0){
 		printf("Numero trovato all'indice: %d", ricerca);
 	} else {
 		printf("Il numero non è presente all'interno dell'array\n");
